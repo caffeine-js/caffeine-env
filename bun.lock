@@ -5,7 +5,9 @@
     "": {
       "name": "caffeine-env",
       "dependencies": {
-        "elysia": "^1.4.26",
+        "@caffeine/errors": "link:@caffeine/errors",
+        "@caffeine/models": "link:@caffeine/models",
+        "@caffeine/schema": "link:@caffeine/schema",
       },
       "devDependencies": {
         "@commitlint/cli": "^20.4.1",
@@ -14,12 +16,14 @@
         "@types/bun": "latest",
         "@vitest/coverage-v8": "^4.0.18",
         "@vitest/ui": "^4.0.18",
+        "elysia": "^1.4.26",
         "husky": "^9.1.7",
         "tsup": "^8.5.1",
         "vite-tsconfig-paths": "^6.0.5",
         "vitest": "^4.0.18",
       },
       "peerDependencies": {
+        "elysia": "^1.4.26",
         "typescript": "^5",
       },
     },
@@ -38,6 +42,12 @@
     "@bcoe/v8-coverage": ["@bcoe/v8-coverage@1.0.2", "", {}, "sha512-6zABk/ECA/QYSCQ1NGiVwwbQerUCZ+TQbp64Q3AgmfNvurHH0j8TtXa1qbShXA6qqkpAj4V5W8pP6mLe1mcMqA=="],
 
     "@borewit/text-codec": ["@borewit/text-codec@0.2.1", "", {}, "sha512-k7vvKPbf7J2fZ5klGRD9AeKfUvojuZIQ3BT5u7Jfv+puwXkUBUT5PVyMDfJZpy30CBDXGMgw7fguK/lpOMBvgw=="],
+
+    "@caffeine/errors": ["@caffeine/errors@link:@caffeine/errors", {}],
+
+    "@caffeine/models": ["@caffeine/models@link:@caffeine/models", {}],
+
+    "@caffeine/schema": ["@caffeine/schema@link:@caffeine/schema", {}],
 
     "@commitlint/cli": ["@commitlint/cli@20.4.2", "", { "dependencies": { "@commitlint/format": "^20.4.0", "@commitlint/lint": "^20.4.2", "@commitlint/load": "^20.4.0", "@commitlint/read": "^20.4.0", "@commitlint/types": "^20.4.0", "tinyexec": "^1.0.0", "yargs": "^17.0.0" }, "bin": { "commitlint": "./cli.js" } }, "sha512-YjYSX2yj/WsVoxh9mNiymfFS2ADbg2EK4+1WAsMuckwKMCqJ5PDG0CJU/8GvmHWcv4VRB2V02KqSiecRksWqZQ=="],
 
